@@ -63,7 +63,7 @@ param acrSku string = 'Basic'
 /* Variables */
 /* *************************************************************** */
 
-var openAiSettings = {
+#var openAiSettings = {
   name: '${name}-openai'
   sku: openAiSku
   maxConversationTokens: '100'
@@ -158,7 +158,7 @@ resource mongoFirewallRulesAllowAll 'Microsoft.DocumentDB/mongoClusters/firewall
 /* Azure OpenAI */
 /* *************************************************************** */
 
-resource openAiAccount 'Microsoft.CognitiveServices/accounts@2023-05-01' = {
+#resource openAiAccount 'Microsoft.CognitiveServices/accounts@2023-05-01' = {
   name: openAiSettings.name
   location: location
   sku: {
